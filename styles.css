@@ -1,0 +1,76 @@
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #7f8fa6;
+  color: whitesmoke;
+}
+
+.form,
+.js-greetings,
+.js-resetUser {
+  display: none;
+}
+
+input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid whitesmoke;
+  margin: 10px;
+}
+
+input::placeholder {
+  font-style: italic;
+  color: whitesmoke;
+}
+
+input:focus {
+  outline: none;
+  color: whitesmoke;
+}
+
+.mid {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock {
+  font-size: xx-large;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.weather {
+  position: absolute;
+  padding: 20px;
+  right: 0;
+  font-style: italic;
+}
+
+.js-greetings {
+  margin: 20px;
+  margin-right: 5px;
+}
+
+.resetUser {
+  color: whitesmoke;
+  background-color: transparent;
+  border: none;
+}
+
+.resetUser:focus {
+  outline: none;
+}
+
+.greeting {
+  display: flex;
+  justify-content: center;
+}
+
+.showing {
+  display: block;
+}
