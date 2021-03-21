@@ -14,7 +14,7 @@ input {
   background: none;
   border: none;
   border-bottom: 1px solid whitesmoke;
-  margin: 10px;
+  margin: 20px;
 }
 
 input::placeholder {
@@ -51,8 +51,16 @@ h1 {
   font-style: italic;
 }
 
+.js-imageFrom {
+  position: absolute;
+  padding: 20px;
+  left: 0;
+  bottom: 0;
+  font-style: italic;
+}
+
 .js-greetings {
-  margin: 20px;
+  margin: 0;
   margin-right: 5px;
 }
 
@@ -64,6 +72,9 @@ h1 {
 
 .resetUser:focus {
   outline: none;
+  background-color: whitesmoke;
+  border-radius: 40px;
+  opacity: 0.6;
 }
 
 .greeting {
@@ -71,6 +82,49 @@ h1 {
   justify-content: center;
 }
 
+ul {
+  text-align: center;
+  margin: 10px;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 10px;
+}
+
+button {
+  color: whitesmoke;
+  background-color: transparent;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 40px;
+}
+
 .showing {
   display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  filter: brightness(50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
 }
