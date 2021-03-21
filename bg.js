@@ -53,7 +53,6 @@ function genRandom() {
 
 function init() {
   const randomNum = genRandom();
-  console.log(randomNum + 1);
   paintImage(randomNum);
 }
 
