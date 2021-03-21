@@ -1,9 +1,6 @@
-import dotenv from "/node_modules/dotenv";
-dotenv.config();
-
 const weather = document.querySelector(".js-weather");
 
-const API_KEYS = process.env.OPENWEATHERMAP;
+const API_KEYS = "";
 const COORDS = "coords";
 
 function getWeather(lat, lon) {
@@ -54,7 +51,6 @@ function loadCoords() {
 }
 
 function init() {
-  console.log(process.env.OPENWEATHERMAP);
   loadCoords();
 }
 
