@@ -15,3 +15,5 @@ Weather information based on your location will NOT WORK.
 ## Known issues
 * Username being not saved on-time
 * Adding too many to-dos make the list go out of the screen
+
+Credits to [Nomad coders](https://github.com/nomadcoders)
